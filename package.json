@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp default"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,11 @@
     "gulp": "^3.9.1",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-tslint": "^4.3.3",
     "gulp-watch": "^4.3.5",
+    "gulp-watchify": "^0.5.0",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
     "tsd": "^0.6.5",

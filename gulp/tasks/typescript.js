@@ -3,8 +3,10 @@ const buffer       = require('vinyl-buffer');
 const gulp = require('gulp');
 const handleErrors = require('./handleErrors');
 const plumber = require('gulp-plumber');
-const watchify = require('watchify');
+const watchify = require('gulp-watchify');
 const sourcemaps = require('gulp-sourcemaps');
+const tsify = require('tsify');
+const rename = require('gulp-rename');
 
 gulp.task(
     'typescript',
@@ -20,6 +22,7 @@ gulp.task(
                 }
             }))
             .pipe(buffer())
+            .pipe(rename(config.ts.bundle))
             .pipe(sourcemaps.init({loadMaps: true}))
             .pipe(sourcemaps.write('./'))
             .pipe(gulp.dest(config.ts.dest));

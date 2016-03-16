@@ -1,19 +1,22 @@
-const jsDir = 'app/assets/javascript';
+const jsDir = 'app/assets/javascripts';
 const tsDir = 'typescript';
-const tsSrc = `${tsDir}/**/*.ts`,
+const tsSrc = `${tsDir}/**/*.ts`;
 
 module.exports = {
-    js: [
-        `${jsDir}/**/*.js`,
-        `${jsDir}/**/*.js.map`
-    ],
+    clean: {
+        js: [
+            `${jsDir}/**/*.js`,
+            `${jsDir}/**/*.js.map`
+        ]
+    },
     ts: {
         entry: `${tsDir}/index.ts`,
         options: {
             target: 'ES5',
             module: 'ES2015'
         },
-        dest: jsDir
+        dest: jsDir,
+        bundle: 'bundle.js'
     },
     tslint: {
         src: tsSrc,

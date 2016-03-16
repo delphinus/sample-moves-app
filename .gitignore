@@ -153,3 +153,7 @@ Session.vim
 *~
 
 
+### https://raw.github.com/github/gitignore/4215c0f78cf6ac52f3b943b7b0904cfc470d032e/Global/Vim.gitignore
+
+app/assets/javascripts/*.js
+app/assets/javascripts/*.js.map
