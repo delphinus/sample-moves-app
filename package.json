@@ -18,5 +18,22 @@
   "bugs": {
     "url": "https://github.com/delphinus35/sample-moves-app/issues"
   },
-  "homepage": "https://github.com/delphinus35/sample-moves-app#readme"
+  "homepage": "https://github.com/delphinus35/sample-moves-app#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^4.3.3",
+    "gulp-watch": "^4.3.5",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5",
+    "tsd": "^0.6.5",
+    "tsify": "^0.14.1",
+    "tslint": "^3.6.0",
+    "typescript": "^1.8.7",
+    "vinyl-buffer": "^1.0.0",
+    "watchify": "^3.7.0"
+  }
 }
