@@ -1,13 +1,15 @@
 class RootController < ApplicationController
 
+  include MovesHelper
+
   def index
 
     if session[:access_token].blank?
       @moves_authorize_uri = Moves.client.auth_code.authorize_url(
-        redirect_uri: callback_auth_moves_url,
-        scope: 'activity'
+        redirect_uri: moves_redirect_uri,
+        scope: 'activity',
       )
-      render 'root/signin'
+      return render 'root/signin'
     end
   end
 end
