@@ -1,0 +1,15 @@
+defaults: &defaults
+  moves_site:                 https://api.moves-app.com
+  moves_authorize_url_mobile: moves://app/authorize
+  moves_token_url:            https://api.moves-app.com/oauth/v1/access_token
+  moves_client_id:            <%= ENV['MOVES_CLIENT_ID'] %>
+  moves_client_secret:        <%= ENV['MOVES_CLIENT_SECRET'] %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
