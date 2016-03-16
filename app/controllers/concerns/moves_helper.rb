@@ -6,4 +6,9 @@ class MovesHelper < ActiveSupport::Concern
 
     callback_auth_moves_url
   end
+
+  def access_token
+
+    Moves.access_token(session[:access_token], session[:refresh_token])
+  end
 end
