@@ -1,0 +1,22 @@
+{
+  "name": "sample-moves-app",
+  "version": "1.0.0",
+  "description": "== README",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delphinus35/sample-moves-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delphinus35/sample-moves-app/issues"
+  },
+  "homepage": "https://github.com/delphinus35/sample-moves-app#readme"
+}
