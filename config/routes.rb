@@ -5,8 +5,19 @@ Rails.application.routes.draw do
     resources :moves, only: [] do
 
       collection do
+
         get :callback
       end
+    end
+  end
+
+  resources :moves, only: [] do
+
+    collection do
+
+      get :logout
+      get :recent
+      get :profile
     end
   end
 
