@@ -12,14 +12,17 @@ module.exports = {
     ts: {
         entry: `${tsDir}/index.ts`,
         options: {
-            target: 'ES5',
-            module: 'ES2015'
+            target: 'es5',
+            experimentalDecorators: true
         },
         dest: jsDir,
         bundle: 'bundle.js'
     },
     tslint: {
-        src: tsSrc,
+        src: [
+            tsSrc,
+            `!${tsDir}/typings/**/*.ts`
+        ],
         lint: {
             configuration: `${tsDir}/tslint.json`
         },
